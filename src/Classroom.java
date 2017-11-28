@@ -1,13 +1,13 @@
 
 public class Classroom {
 	
-	private Student[] student;
-	private Person teacher;
+	private Student[] Student;
+	private Person Teacher;
 	
-	public Classroom() {
+	public Classroom(Student[] Student, Person Teacher) {
 		// TODO Auto-generated constructor stub
-		this.student=student;
-		this.teacher=teacher;
+		this.Student=Student;
+		this.Teacher=Teacher;
 	}
 	
 	public String getSubject() {
@@ -16,14 +16,15 @@ public class Classroom {
 	
 	public double classAverage() {
 		double x = 0;
-		for(int i=0;i<student.length;i++) {
-			x = x + student[i].getGPA();
+		for(int i=0;i<Student.length;i++) {
+			x = x + Student[i].getGPA();
 		}
-		x = x / student.length;
+		x = x / Student.length;
 		return x;
 	}
 	
 	public String printClass() {
-		return Teacher.getTitle() + teacher + " " + getSubject() + student;
+		return  Teacher + " " + getSubject() + Student;
 	}
+
 }
