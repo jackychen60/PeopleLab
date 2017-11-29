@@ -1,7 +1,7 @@
 
 public class Classroom {
 	
-	private Student[] Student;
+	private Person[] Student;
 	private Person Teacher;
 	
 	public Classroom(Student[] Student, Person Teacher) {
@@ -15,12 +15,14 @@ public class Classroom {
 	}
 	
 	public double classAverage() {
-		double x = 0;
-		for(int i=0;i<Student.length;i++) {
-			x = x + Student[i].getGPA();
-		}
-		x = x / Student.length;
-		return x;
+		double total = 0.0;
+		int numStudents = 0;
+		for(Person A : this.Student) {
+			if(A instanceof Student)
+			{
+				total+=((Student) A).getGPA();
+				numStudents++;
+			}
 	}
 	
 	public String printClass() {
