@@ -13,6 +13,7 @@ public class Runner {
 			System.out.println(Student);
 			
 		}
-		System.out.println(Classroom.getSubject() + Classroom.classAverage());
+		Classroom x = new Classroom(Avg, Sub);
+		System.out.println(x.getSubject() + x.classAverage());
 	}
 }

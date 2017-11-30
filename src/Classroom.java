@@ -23,6 +23,8 @@ public class Classroom {
 				total+=((Student) A).getGPA();
 				numStudents++;
 			}
+		}
+		return total/numStudents;
 	}
 	
 	public String printClass() {
