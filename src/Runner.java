@@ -6,14 +6,14 @@ public class Runner {
 
 	public static void main(String[] args)
 	{
-		String teacher = "Mr.Levin";
-		Person[] students = {"Jacky", "Vivian", "MAMADOU"};
+		Person teacher = new Teacher("AP Java","Mr.", "Nathan", "Levin", 10, 29);
+		Person[] students = new Student{(4.0, 1380, 7, "Vivian", "Yee", 7, 17),(4.0, 1380, 7, "Vivian", "Yee", 7, 17)};
 
-		for (String Student : students) {
+		for (Person Student : students) {
 			System.out.println(Student);
 			
 		}
-		Classroom x = new Classroom(Avg, Sub);
+		Classroom x = new Classroom(students,teacher);
 		System.out.println(x.getSubject() + x.classAverage());
 	}
 }

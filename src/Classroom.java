@@ -4,7 +4,7 @@ public class Classroom {
 	private Person[] Student;
 	private Person Teacher;
 	
-	public Classroom(Student[] Student, Person Teacher) {
+	public Classroom(Person[] Student, Person Teacher) {
 		// TODO Auto-generated constructor stub
 		this.Student=Student;
 		this.Teacher=Teacher;
